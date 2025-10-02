@@ -1,0 +1,878 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Assignment-3</title>
+    <!-- tailwind -->
+     <script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script>
+     <!-- font  -->
+      <style>
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300..800;1,300..800&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Rajdhani:wght@300;400;500;600;700&display=swap');
+
+*{
+     font-family: "Poppins", sans-serif;
+}
+</style>
+<!-- font awesome -->
+ <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.0.1/css/all.min.css" integrity="sha512-2SwdPD6INVrV/lHTZbO2nodKhrnDdJK9/kg2XD1r9uGqPo1cUbujc+IYdlYdEErWNu69gVcYgdxlmVmzTWnetw==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+</head>
+<body>
+    <header>
+         <!-- nav start -->
+          <nav class="border-t-4 border-[#ED233C]">
+            <div class="mx-auto container px-12 flex justify-between py-2">
+                <div>
+                    <p class="text-sm text-gray-600">Limited-Time Offers : Mid-Summer Season Sale On Selected Items - SHOP NOW</p>
+                </div>
+                <div class="">
+                    <ul class="text-gray-600 text-sm flex gap-8">
+                        <li>Help Center</li>
+                        
+                        <p class="">|</p>
+                       <li>Order Tracking</li>
+                       <p>|</p>
+                       <div class="flex gap-1 items-center">
+                        <div class="-rotate-180"><img  src="images/1.jpg" alt=""></div>
+                        <li>English</li>
+                                                   <img class="w-5" src="images/download.svg" alt="">
+                        
+                       </div>
+                       <p>|</p>
+                        
+                          <div class="flex gap-1">
+                           <li>$ USD</li>
+                           <img class="w-5" src="images/download.svg" alt="">
+                          </div>
+                    </ul>
+                </div>
+            </div>
+          </nav> 
+          <!-- nav second -->
+           <nav class="mx-auto container px-12  py-3 ">
+            <div class="flex justify-between items-center">
+                <div>
+                    <img class="w-52" src="images/logo-1753509866.svg" alt="">
+                </div>
+                <div class="flex justify-between w-6/12 rounded-md border border-[#E5E5E5]">
+                    <div class="flex items-center gap-4">
+                       <div class="flex gap-3 items-center">
+
+                         <p class="text-[16px] pl-4">All Categories</p>
+                         <img class="w-6" src="images/download.svg" alt="">
+                       </div>
+                       <p class="text-gray-400">|
+                       </p>
+                      <p class="text-gray-500 text-sm">Search product here..</p>
+                    </div>
+                    <div>
+                        <p class="rounded-r-md px-4 py-3 bg-red-600 text-center text-white"><i class="fa-brands fa-searchengin w-20"></i></p>
+                    </div>
+
+
+            </div>
+            <div class="flex gap-5">
+                <p class="text-2xl text-[#111130] hover:text-red-600"><i class="fa-solid fa-user "></i></p>
+                <p class="text-2xl  text-[#111130] hover:text-red-600"><i class="fa-solid fa-file-contract"></i></p>
+                <p class="text-2xl text-[#111130] hover:text-red-600"><i class="fa-solid fa-heart"></i></p>
+                <p class="text-2xl text-[#111130] hover:text-red-600"><i class="fa-solid fa-cart-shopping"></i></p>
+                <div><p class="text-sm font-medium text-[#111130] hover:text-red-600">My Cart</p>
+                <p class="text-gray-400 text[14px]">$45.00</p></div>
+                
+            </div>
+            </div>
+           </nav>
+    <!-- nav end -->
+     <nav class="mx-auto container px-12 pt-3  border-b-2 border-gray-200 ">
+        <div class="justify-between flex items-center">
+            <div class="flex items-center gap-5">
+                <button class="bg-[#EF233C] flex items-center px-8 py-4 gap-4 text-white text-lg rounded-tl-md rounded-tr-md">
+                    <p class="text-lg"><i class="fa-solid fa-bars"></i></p>
+                    <p>Shop By Categories</p>
+                </button>
+                <ul class="flex items-center gap-7 ">
+                    <li class="hover:text-[#EF233C] font-medium">Home</li>
+                    <li class="hover:text-[#EF233C] font-medium">Shop</li>
+                    <li class="hover:text-[#EF233C] font-medium">Categories</li>
+                    <li class="hover:text-[#EF233C] font-medium">Products</li>
+                    <li class="hover:text-[#EF233C] font-medium">Top Deals</li>
+                    <li class="hover:text-[#EF233C] font-medium">Elements</li>
+                </ul>
+            </div>
+            <div class="flex gap-2 items-center">
+                <img class="w-5" src="images/fire-emoji-icon-free-png.webp" alt="">
+                <p class="text-[16px] font-medium">Hot Deals</p>
+            </div>
+        </div>
+     </nav>
+    </header>
+    <main>
+<!-- Hero Section -->
+
+<section class="mx-auto container  px-12 bg-[#FEFEFE]">
+        <div class="py-4">
+            <div class="flex gap-5">
+                <!-- img -->
+                <div class="relative"> 
+                    <img class="rounded-md" src="images/main-banner-2.jpg" alt="">
+
+                    <div class="absolute top-28 right-4 w-4/12">
+                         <p class="px-0.5 w-7/12 py-2 bg-[#EF233C] rounded-full  text-sm text-white text-center uppercase">Welcome to Autogear</p>  
+
+
+                         <h1 class="text-white text-5xl font-semibold py-5">Track Your Car services Real-Time</h1>
+                         <p class="text-white text-sm">This Week only for world premier</p>
+                         <button class="px-5 py-2 mt-11 bg-[#EF233C] rounded-md text-white">Shop Now</button>
+                                            </div>
+                </div>
+                <!-- card part -->
+             <div class="space-y-4">
+                   <div class="flex relative">
+                    <div class="">
+                        <img class="rounded-md" src="images/sub-banner-1.jpg" alt="">
+                    </div>
+                    <div>
+                      <div class="absolute right-4 w-4/12 text-start top-6 ">
+                          <p class="p-0.5 bg-[#EF233C] rounded-full  text-sm text-white text-center">Save 10% OFF</p>
+                          <h1 class="text-xl font-medium py-2">Mack Vision Headlight</h1>
+                         <ul class="mt-3">
+                            <li class="underline"><a href="">Shop now</a></li>
+                         </ul>
+                      </div>
+                    </div>
+                </div>
+                   <div class="flex relative ">
+                    <div class="">
+                        <img class="rounded-md" src="images/sub-banner-2.jpg" alt="">
+                    </div>
+                    <div>
+                      <div class="absolute left-4 w-4/12 text-start top-6 ">
+                          <p class="p-0.5 bg-[#EF233C] rounded-full  text-sm text-white text-center">Save 10% OFF</p>
+                          <h1 class="text-xl font-medium py-2">Mack Vision Headlight</h1>
+                         <ul class="mt-3">
+                            <li class="underline"><a href="">Shop now</a></li>
+                         </ul>
+                      </div>
+                    </div>
+                </div>
+                   <div class="flex relative">
+                    <div class="">
+                        <img class="rounded-md" src="./images/sub-banner-3.jpg" alt="">
+                    </div>
+                    <div>
+                      <div class="absolute right-4 w-4/12 text-start top-6 ">
+                          <p class="p-0.5 bg-[#EF233C] rounded-full  text-sm text-white text-center">Save 10% OFF</p>
+                          <h1 class="text-xl font-medium py-2">Mack Vision Headlight</h1>
+                         <ul class="mt-3">
+                            <li class="underline"><a href="">Shop now</a></li>
+                         </ul>
+                      </div>
+                    </div>
+                </div>
+             </div>
+            </div>
+        </div>
+</section>
+
+<!-- hero end section -->
+          <section class="mx-auto container px-12 pb-12 pt-6">
+            <div class="flex gap-6">
+                <div class="py-7 px-10 border border-gray-300 rounded-md">
+                    <img src="images/hero1.jpg" alt="">
+                </div>
+                <div class="py-7 px-10 border border-gray-300 rounded-md">
+                    <img src="images/hero2.jpg" alt="">
+                </div>
+                <div class="py-7 px-10 border border-gray-300 rounded-md">
+                    <img src="images/hero3.jpg" alt="">
+                </div>
+                <div class="py-7 px-10 border border-gray-300 rounded-md">
+                    <img src="images/hero4.jpg" alt="">
+                </div>
+                <div class="py-7 px-10 border border-gray-300 rounded-md">
+                    <img src="images/5.jpg" alt="">
+                </div>
+                <div class="py-7 px-10 border border-gray-300 rounded-md">
+                    <img src="images/6.jpg" alt="">
+                </div>
+                <div class="py-7 px-10 border border-gray-300 rounded-md">
+                    <img src="images/7.jpg" alt="">
+                </div>
+               
+            </div>
+          </section>
+
+          <!-- four section -->
+          <section class="mx-auto container px-12 py-8">
+            <div>
+                <div class="flex justify-between border-b border-gray-200 items-center">
+                    <h1 class="text-2xl font-semibold border-b-4 border-red-600 pb-5.5">Deal Of The Week</h1>
+                    <div class="pb-3">
+                        <button class="px-4 py-2 rounded-md bg-gray-300 hover:bg-[#EF233C] text-gray-500 text-2xl rotate-180"> >                        
+                        </button>
+                        <button class="px-4 py-2 rounded-md bg-gray-300 hover:bg-[#EF233C] text-gray-500 text-2xl "> >                        
+                        </button>
+                    </div>
+                </div>
+                <!-- card part -->
+                <div class="py-10 flex items-center gap-2">
+                      <div class="px-8 py-4 border-2 border-[#EF233C] flex justify-between gap-6 items-center rounded-md">
+                          <div class="relative flex-1">
+                            <img class="" src="images/olly-rose-large-ceramic-planter-shallow-plant-pot.jpg" alt="">
+                            <button class="text-white text-sm absolute bottom-40 bg-[#EF233C] px-3 py-1"><p >-10%</p></button>
+                          </div>
+                          <div class="flex-1">
+                            <h5 class="text-[14px] font-medium">Technaxx Car Alarm With Charging Function TX-100</h5>
+                            <div class="flex items-center py-3">
+                                <img class="" src="images/c6fb50cf367d9354c2e0.png" alt="">
+                                <img class="" src="images/c6fb50cf367d9354c2e0.png" alt="">
+                            </div>
+                        <p class="text-[15px]">$45.00 <span class="text-gray-500 line-through">$40.50</span></p>
+                        <div class="p-2 border-gray-300 border-2 flex items-center  leading-4 gap-2 my-3 text-center w-52 rounded-md">
+                            <p class="text-black text-sm font-semibold">817 <br><span class="text-gray-400">DAYS</span></p>
+                            <p class="text-gray-500">|</p>
+                            <p class="text-black text-sm font-semibold">11 <br> <span class="text-gray-400">HRS</span></p>
+                            <p class="text-gray-500">|</p>
+                            <p class="text-black text-sm font-semibold">27 <br> <span class="text-gray-400">MIN</span></p>
+                                <p class="text-gray-500">|</p>
+                            <p class="text-black text-sm font-semibold">32 <br><span class="text-gray-400">SEC</span></p>
+                        </div>
+                        <button class="px-6 py-3 text-center bg-[#EF233C] rounded-md text-white text-[13px]">Add To Cart</button>
+                          </div>
+                      </div>
+                      <div class="px-8 py-4 border-2 border-[#EF233C] flex justify-between gap-6 items-center rounded-md">
+                          <div class="relative flex-1">
+                            <img class="" src="images/motul-7100-20w-50-api-fully-synthetic-engine-oil.jpg" alt="">
+                            <button class="text-white text-sm absolute bottom-40 bg-[#EF233C] px-3 py-1"><p >-10%</p></button>
+                          </div>
+                          <div class="flex-1">
+                            <h5 class="text-[14px] font-medium">Technaxx Car Alarm With Charging Function TX-100</h5>
+                            <div class="flex items-center py-3">
+                                <img class="" src="images/c6fb50cf367d9354c2e0.png" alt="">
+                                <img class="" src="images/c6fb50cf367d9354c2e0.png" alt="">
+                            </div>
+                        <p class="text-[15px]">$45.00 <span class="text-gray-500 line-through">$40.50</span></p>
+                        <div class="p-2 border-gray-300 border-2 flex items-center  leading-4 gap-2 my-3 text-center w-52 rounded-md">
+                            <p class="text-black text-sm font-semibold">817 <br><span class="text-gray-400">DAYS</span></p>
+                            <p class="text-gray-500">|</p>
+                            <p class="text-black text-sm font-semibold">11 <br> <span class="text-gray-400">HRS</span></p>
+                            <p class="text-gray-500">|</p>
+                            <p class="text-black text-sm font-semibold">27 <br> <span class="text-gray-400">MIN</span></p>
+                                <p class="text-gray-500">|</p>
+                            <p class="text-black text-sm font-semibold">32 <br><span class="text-gray-400">SEC</span></p>
+                        </div>
+                        <button class="px-6 py-3 text-center bg-[#EF233C] rounded-md text-white text-[13px]">Add To Cart</button>
+                          </div>
+                      </div>
+                      <div class="px-8 py-4 border-2 border-[#EF233C] flex justify-between gap-6 items-center rounded-md">
+                          <div class="relative flex-1">
+                            <img class="" src="images/motul-7100-20w-50-api-fully-synthetic-engine-oil.jpg" alt="">
+                            <button class="text-white text-sm absolute bottom-40 bg-[#EF233C] px-3 py-1"><p >-10%</p></button>
+                          </div>
+                          <div class="flex-1">
+                            <h5 class="text-[14px] font-medium">Technaxx Car Alarm With Charging Function TX-100</h5>
+                            <div class="flex items-center py-3">
+                                <img class="" src="images/c6fb50cf367d9354c2e0.png" alt="">
+                                <img class="" src="images/c6fb50cf367d9354c2e0.png" alt="">
+                            </div>
+                        <p class="text-[15px]">$45.00 <span class="text-gray-500 line-through">$40.50</span></p>
+                        <div class="p-2 border-gray-300 border-2 flex items-center  leading-4 gap-2 my-3 text-center w-52 rounded-md">
+                            <p class="text-black text-sm font-semibold">817 <br><span class="text-gray-400">DAYS</span></p>
+                            <p class="text-gray-500">|</p>
+                            <p class="text-black text-sm font-semibold">11 <br> <span class="text-gray-400">HRS</span></p>
+                            <p class="text-gray-500">|</p>
+                            <p class="text-black text-sm font-semibold">27 <br> <span class="text-gray-400">MIN</span></p>
+                                <p class="text-gray-500">|</p>
+                            <p class="text-black text-sm font-semibold">32 <br><span class="text-gray-400">SEC</span></p>
+                        </div>
+                        <button class="px-6 py-3 text-center bg-[#EF233C] rounded-md text-white text-[13px]">Add To Cart</button>
+                          </div>
+                      </div>
+                    
+                   
+                  
+                    
+                      </div>
+                </div>
+            </div>
+          </section>
+
+
+          <!-- five section -->
+<section class="mx-auto container px-12 mb-12">
+        <div class="flex justify-between border-b border-gray-300 items-center">
+                 <div class="border-b-2 border-red-500 ">  <h2 class="text-2xl font-bold pb-2 ">Trending Collections</h2></div>
+                    <div class=" flex gap-10 ">
+                       <p class="text-sm hover:text-red-600 hover:border-b-2 hover:border-red-600 pb-3">ACCESSORIES</p>
+                       <p class="text-sm hover:text-red-600 hover:border-b-2 hover:border-red-600 pb-3">BODY PARTS</p>
+                       <p class="text-sm hover:text-red-600 hover:border-b-2 hover:border-red-600 pb-3">AUTO PARTS</p>
+                    </div>
+                </div>
+  
+  <div class="grid grid-cols-1 md:grid-cols-3 lg:grid-cols-6 gap-6 py-6">
+    <!-- Product Card -->
+    
+    <div class="border border-gray-300 py-6 px-4 w-56 rounded shadow">
+      <img src="images/front-brake-disk-brake-pads-for-yamaha-vino.jpg" alt="" class="mx-auto mb-4">
+      <p class="text-sm text-gray-400">Style Hub</p>
+      <h3 class=" text-sm pt-3 font-medium">Front Brake Disk + Brake Pads For Yamaha VINO</h3>
+       <div class="flex items-center py-3">
+                                <img class="" src="images/c6fb50cf367d9354c2e0.png" alt="">
+                                <img class="" src="images/c6fb50cf367d9354c2e0.png" alt="">
+                            </div>
+      <p class="text-red-600 font-bold">$110.00</p>
+      <button class="hover:bg-red-500 bg-gray-300 hover:text-white px-8 py-2 mt-2 rounded text-sm uppercase text-center w-full font-medium">Add to Cart</button>
+    </div>
+    <div class="border border-gray-300 py-6 px-4 w-56 rounded shadow">
+      <img src="images/front-brake-disk-brake-pads-for-yamaha-vino.jpg" alt="" class="mx-auto mb-4">
+      <p class="text-sm text-gray-400">Style Hub</p>
+      <h3 class=" text-sm pt-3 font-medium">Front Brake Disk + Brake Pads For Yamaha VINO</h3>
+       <div class="flex items-center py-3">
+                                <img class="" src="images/c6fb50cf367d9354c2e0.png" alt="">
+                                <img class="" src="images/c6fb50cf367d9354c2e0.png" alt="">
+                            </div>
+      <p class="text-red-600 font-bold">$110.00</p>
+      <button class="hover:bg-red-500 bg-gray-300 hover:text-white px-8 py-2 mt-2 rounded text-sm uppercase text-center w-full font-medium">Add to Cart</button>
+    </div>
+    <div class="border border-gray-300 py-6 px-4 w-56 rounded shadow">
+      <img src="images/front-brake-disk-brake-pads-for-yamaha-vino.jpg" alt="" class="mx-auto mb-4">
+      <p class="text-sm text-gray-400">Style Hub</p>
+      <h3 class=" text-sm pt-3 font-medium">Front Brake Disk + Brake Pads For Yamaha VINO</h3>
+       <div class="flex items-center py-3">
+                                <img class="" src="images/c6fb50cf367d9354c2e0.png" alt="">
+                                <img class="" src="images/c6fb50cf367d9354c2e0.png" alt="">
+                            </div>
+      <p class="text-red-600 font-bold">$110.00</p>
+      <button class="hover:bg-red-500 bg-gray-300 hover:text-white px-8 py-2 mt-2 rounded text-sm uppercase text-center w-full font-medium">Add to Cart</button>
+    </div>
+    <div class="border border-gray-300 py-6 px-4 w-56 rounded shadow">
+      <img src="images/front-brake-disk-brake-pads-for-yamaha-vino.jpg" alt="" class="mx-auto mb-4">
+      <p class="text-sm text-gray-400">Style Hub</p>
+      <h3 class=" text-sm pt-3 font-medium">Front Brake Disk + Brake Pads For Yamaha VINO</h3>
+       <div class="flex items-center py-3">
+                                <img class="" src="images/c6fb50cf367d9354c2e0.png" alt="">
+                                <img class="" src="images/c6fb50cf367d9354c2e0.png" alt="">
+                            </div>
+      <p class="text-red-600 font-bold">$110.00</p>
+      <button class="hover:bg-red-500 bg-gray-300 hover:text-white px-8 py-2 mt-2 rounded text-sm uppercase text-center w-full font-medium">Add to Cart</button>
+    </div>
+    <div class="border border-gray-300 py-6 px-4 w-56 rounded shadow">
+      <img src="images/front-brake-disk-brake-pads-for-yamaha-vino.jpg" alt="" class="mx-auto mb-4">
+      <p class="text-sm text-gray-400">Style Hub</p>
+      <h3 class=" text-sm pt-3 font-medium">Front Brake Disk + Brake Pads For Yamaha VINO</h3>
+       <div class="flex items-center py-3">
+                                <img class="" src="images/c6fb50cf367d9354c2e0.png" alt="">
+                                <img class="" src="images/c6fb50cf367d9354c2e0.png" alt="">
+                            </div>
+      <p class="text-red-600 font-bold">$110.00</p>
+      <button class="hover:bg-red-500 bg-gray-300 hover:text-white px-8 py-2 mt-2 rounded text-sm uppercase text-center w-full font-medium">Add to Cart</button>
+    </div>
+    <div class="border border-gray-300 py-6 px-4 w-56 rounded shadow">
+      <img src="images/front-brake-disk-brake-pads-for-yamaha-vino.jpg" alt="" class="mx-auto mb-4">
+      <p class="text-sm text-gray-400">Style Hub</p>
+      <h3 class=" text-sm pt-3 font-medium">Front Brake Disk + Brake Pads For Yamaha VINO</h3>
+       <div class="flex items-center py-3">
+                                <img class="" src="images/c6fb50cf367d9354c2e0.png" alt="">
+                                <img class="" src="images/c6fb50cf367d9354c2e0.png" alt="">
+                            </div>
+      <p class="text-red-600 font-bold">$110.00</p>
+      <button class="hover:bg-red-500 bg-gray-300 hover:text-white px-8 py-2 mt-2 rounded text-sm uppercase text-center w-full font-medium">Add to Cart</button>
+    </div>
+   
+  
+  </div>
+</section>
+
+
+
+<!-- six section -->
+
+<section class="mx-auto container px-12 pb-12">
+    <div class="flex gap-8">
+        <div class="relative"> 
+                    <img class="rounded-md " src="images/cms-banner-1.jpg" alt="">
+
+                    <div class="absolute top-10 right-4 w-5/12">
+                         <p class="px-0.5 w-7/12 py-0.5 bg-[#EF233C] rounded-full  text-sm text-white text-center uppercase">
+                            UP TO 50% OFF
+                         </p>  
+
+
+                         <h1 class="text-white text-3xl font-semibold py-5">Autos Chevrolet
+Spark 2016</h1>
+                         <p class="text-white text-sm">Spark Limited Edition launched</p>
+                        
+                                            </div>
+                </div>
+        <div class="relative"> 
+                    <img class="rounded-md" src="images/cms-banner-2.jpg" alt="">
+
+                    <div class="absolute top-10 right-4 w-5/12">
+                         <p class="px-0.5 w-7/12 py-0.5 bg-[#EF233C] rounded-full  text-sm text-white text-center uppercase">
+                            UP TO 50% OFF
+                         </p>  
+
+
+                         <h1 class="text-white text-3xl font-semibold py-5">Autos Chevrolet
+Spark 2016</h1>
+                         <p class="text-white text-sm">Spark Limited Edition launched</p>
+                        
+                                            </div>
+                </div>
+          
+    </div>
+</section>
+<!-- seven section-->
+  
+
+<section class="mx-auto container px-12 mb-12">
+          <div class="flex justify-between border-b border-gray-200 items-center">
+                    <h1 class="text-2xl font-semibold border-b-4 border-red-600 pb-5.5">Latest Products
+                    </h1>
+                    <div class="pb-3">
+                        <button class="px-4 py-2 rounded-md bg-gray-300 hover:bg-[#EF233C] text-gray-500 text-2xl rotate-180"> >                        
+                        </button>
+                        <button class="px-4 py-2 rounded-md bg-gray-300 hover:bg-[#EF233C] text-gray-500 text-2xl "> >                        
+                        </button>
+                    </div>
+                </div>
+  
+  <div class="grid grid-cols-1 md:grid-cols-3 lg:grid-cols-6 gap-6 py-6">
+    <!-- Product Card -->
+    
+    <div class="border border-gray-300 py-6 px-4 w-56 rounded shadow">
+      <img src="images/black-yellow-wheel-cover-13-inch-for-four-wheel.jpg" alt="" class="mx-auto mb-4">
+      <p class="text-sm text-gray-400">Style Hub</p>
+      <h3 class=" text-sm pt-3 font-medium">Front Brake Disk + Brake Pads For Yamaha VINO</h3>
+       <div class="flex items-center py-3">
+                                <img class="" src="images/c6fb50cf367d9354c2e0.png" alt="">
+                                <img class="" src="images/c6fb50cf367d9354c2e0.png" alt="">
+                            </div>
+      <p class="text-red-600 font-bold">$110.00</p>
+      <button class="hover:bg-red-500 bg-gray-300 hover:text-white px-8 py-2 mt-2 rounded text-sm uppercase text-center w-full font-medium">Add to Cart</button>
+    </div>
+    <div class="border border-gray-300 py-6 px-4 w-56 rounded shadow">
+      <img src="images/olly-rose-large-ceramic-planter-shallow-plant-pot.jpg" alt="" class="mx-auto mb-4">
+      <p class="text-sm text-gray-400">Style Hub</p>
+      <h3 class=" text-sm pt-3 font-medium">Front Brake Disk + Brake Pads For Yamaha VINO</h3>
+       <div class="flex items-center py-3">
+                                <img class="" src="images/c6fb50cf367d9354c2e0.png" alt="">
+                                <img class="" src="images/c6fb50cf367d9354c2e0.png" alt="">
+                            </div>
+      <p class="text-red-600 font-bold">$110.00</p>
+      <button class="hover:bg-red-500 bg-gray-300 hover:text-white px-8 py-2 mt-2 rounded text-sm uppercase text-center w-full font-medium">Add to Cart</button>
+    </div>
+    <div class="border border-gray-300 py-6 px-4 w-56 rounded shadow">
+      <img src="images/calandis-modern-white-ceramic-flower-vase (1).jpg" alt="" class="mx-auto mb-4">
+      <p class="text-sm text-gray-400">Style Hub</p>
+      <h3 class=" text-sm pt-3 font-medium">Front Brake Disk + Brake Pads For Yamaha VINO</h3>
+       <div class="flex items-center py-3">
+                                <img class="" src="images/c6fb50cf367d9354c2e0.png" alt="">
+                                <img class="" src="images/c6fb50cf367d9354c2e0.png" alt="">
+                            </div>
+      <p class="text-red-600 font-bold">$110.00</p>
+      <button class="hover:bg-red-500 bg-gray-300 hover:text-white px-8 py-2 mt-2 rounded text-sm uppercase text-center w-full font-medium">Add to Cart</button>
+    </div>
+    <div class="border border-gray-300 py-6 px-4 w-56 rounded shadow">
+      <img src="images/calandis-modern-white-ceramic-flower-vase (1).jpg" alt="" class="mx-auto mb-4">
+      <p class="text-sm text-gray-400">Style Hub</p>
+      <h3 class=" text-sm pt-3 font-medium">Front Brake Disk + Brake Pads For Yamaha VINO</h3>
+       <div class="flex items-center py-3">
+                                <img class="" src="images/c6fb50cf367d9354c2e0.png" alt="">
+                                <img class="" src="images/c6fb50cf367d9354c2e0.png" alt="">
+                            </div>
+      <p class="text-red-600 font-bold">$110.00</p>
+      <button class="hover:bg-red-500 bg-gray-300 hover:text-white px-8 py-2 mt-2 rounded text-sm uppercase text-center w-full font-medium">Add to Cart</button>
+    </div>
+    <div class="border border-gray-300 py-6 px-4 w-56 rounded shadow">
+      <img src="images/calandis-modern-white-ceramic-flower-vase.jpg" alt="" class="mx-auto mb-4">
+      <p class="text-sm text-gray-400">Style Hub</p>
+      <h3 class=" text-sm pt-3 font-medium">Front Brake Disk + Brake Pads For Yamaha VINO</h3>
+       <div class="flex items-center py-3">
+                                <img class="" src="images/c6fb50cf367d9354c2e0.png" alt="">
+                                <img class="" src="images/c6fb50cf367d9354c2e0.png" alt="">
+                            </div>
+      <p class="text-red-600 font-bold">$110.00</p>
+      <button class="hover:bg-red-500 bg-gray-300 hover:text-white px-8 py-2 mt-2 rounded text-sm uppercase text-center w-full font-medium">Add to Cart</button>
+    </div>
+    <div class="border border-gray-300 py-6 px-4 w-56 rounded shadow">
+      <img src="images/motul-7100-20w-50-api-fully-synthetic-engine-oil.jpg" alt="" class="mx-auto mb-4">
+      <p class="text-sm text-gray-400">Style Hub</p>
+      <h3 class=" text-sm pt-3 font-medium">Front Brake Disk + Brake Pads For Yamaha VINO</h3>
+       <div class="flex items-center py-3">
+                                <img class="" src="images/c6fb50cf367d9354c2e0.png" alt="">
+                                <img class="" src="images/c6fb50cf367d9354c2e0.png" alt="">
+                            </div>
+      <p class="text-red-600 font-bold">$110.00</p>
+      <button class="hover:bg-red-500 bg-gray-300 hover:text-white px-8 py-2 mt-2 rounded text-sm uppercase text-center w-full font-medium">Add to Cart</button>
+    </div>
+   
+  
+  </div>
+</section>
+
+
+<!-- Shop by category -->
+
+<section class="mx-auto container px-12 pb-6 bg-[#FAF6F2]">
+    <div class="py-20">
+          <div class="flex justify-between border-b border-gray-200 items-center">
+                    <h1 class="text-2xl font-semibold border-b-4 border-red-600 pb-5.5">Shop By Category
+                    </h1>
+                    <div class="pb-3">
+                        <button class="px-4 py-2 rounded-md bg-gray-300 hover:bg-[#EF233C] text-gray-500 text-2xl rotate-180"> >                        
+                        </button>
+                        <button class="px-4 py-2 rounded-md bg-gray-300 hover:bg-[#EF233C] text-gray-500 text-2xl "> >                        
+                        </button>
+                    </div>
+                </div>
+  <div class="flex gap-6 pt-11">
+               <div>
+               
+                    <img class="rounded-full"  src="images/cat-1.jpg" alt="">
+                
+                <p class="text-lg text-center pt-4 font-medium">Breaks& Rotes</p>
+               </div>
+               <div>
+              
+                    <img class="rounded-full"  src="images/cat-2.jpg" alt="">
+                
+                <p class="text-lg text-center pt-4 font-medium">Breaks& Rotes</p>
+               </div>
+               <div>
+                 
+                    <img class="rounded-full" src="images/cat-3.jpg" alt="">
+                
+                <p class="text-lg text-center pt-4 font-medium">Breaks& Rotes</p>
+               </div>
+               <div>
+                
+                    <img class="rounded-full" src="images/cat-4.jpg" alt="">
+                
+                <p class="text-lg text-center pt-4 font-medium">Breaks& Rotes</p>
+               </div>
+               <div>
+                 
+                    <img class="rounded-full" src="images/cat-5.jpg" alt="">
+                
+                <p class="text-lg text-center pt-4 font-medium">Breaks& Rotes</p>
+               </div>
+               <div>
+                
+                    <img class="rounded-s-full"  src="images/cat-6.jpg" alt="">
+               
+                <p class="text-lg text-center pt-4 font-medium">Breaks& Rotes</p>
+               </div>
+               <div>
+                
+                    <img class="rounded-full"  src="images/cat-7.jpg" alt="">
+               
+                <p class="text-lg text-center pt-4 font-medium">Breaks& Rotes</p>
+               </div>
+              
+               
+            </div>
+    </div>
+</section>
+
+<!-- nine part -->
+ <section class="mx-auto container px-12 py-12">
+    <div class="flex gap-4">
+        <div class="relative"> 
+                    <img class="rounded-md " src="images/sub-banner-4.jpg" alt="">
+
+                    <div class="absolute top-10 right-4 w-5/12">
+                         <p class="px-0.5 w-7/12 py-0.5 bg-[#EF233C] rounded-full  text-sm text-white text-center uppercase">
+                            Save 20% OF
+                         </p>  
+
+
+                         <h1 class="text-black text-2xl font-semibold pt-5">Dual Exhaust Silencer</h1>
+                        <ul class="my-3">
+                            <li class="underline uppercase text-sm font-medium"><a href="">Shop now</a></li>
+                         </ul>
+                        
+                                            </div>
+                </div>
+        <div class="relative"> 
+                    <img class="rounded-md " src="./images/sub-banner-5.jpg" alt="">
+
+                    <div class="absolute top-10 right-1 w-5/12">
+                         <p class="px-0.5 w-7/12 py-0.5 bg-[#EF233C] rounded-full  text-sm text-white text-center uppercase">
+                            Save 20% OF
+                         </p>  
+
+
+                         <h1 class="text-white text-2xl font-semibold pt-5">Dual Exhaust Silencer</h1>
+                        <ul class="my-3">
+                            <li class="underline uppercase text-sm font-medium text-white"><a href="">Shop now</a></li>
+                         </ul>
+                        
+                                            </div>
+                </div>
+        <div class="relative"> 
+                    <img class="rounded-md " src="./images/sub-banner-6.jpg" alt="">
+
+                    <div class="absolute top-10 right-1 w-5/12">
+                         <p class="px-0.5 w-7/12 py-0.5 bg-[#EF233C] rounded-full  text-sm text-white text-center uppercase">
+                            Save 20% OF
+                         </p>  
+
+
+                         <h1 class="text-black text-2xl font-semibold pt-5">Dual Exhaust Silencer</h1>
+                        <ul class="my-3">
+                            <li class="underline uppercase text-sm font-medium"><a href="">Shop now</a></li>
+                         </ul>
+                        
+                                            </div>
+                </div>
+      
+          
+    </div>
+</section>
+
+<!-- features product -->
+
+<section class="mx-auto container px-12 py-12">
+          <div class="flex justify-between border-b border-gray-200 items-center">
+                    <h1 class="text-2xl font-semibold border-b-4 border-red-600 pb-5.5">Featured Products
+                    </h1>
+                    <div class="pb-3">
+                        <button class="px-4 py-2 rounded-md bg-gray-300 hover:bg-[#EF233C] text-gray-500 text-2xl rotate-180"> >                        
+                        </button>
+                        <button class="px-4 py-2 rounded-md bg-gray-300 hover:bg-[#EF233C] text-gray-500 text-2xl "> >                        
+                        </button>
+                    </div>
+                </div>
+  
+  <div class="grid grid-cols-1 md:grid-cols-3 lg:grid-cols-6 gap-6 py-6">
+    <!-- Product Card -->
+    
+   <div class="relative">
+     <div class="border border-gray-300 py-6 px-4 w-56 rounded shadow">
+      <img src="images/calandis-modern-white-ceramic-flower-vase.jpg" alt="" class="mx-auto mb-4">
+      <p class="text-sm text-gray-400">Style Hub</p>
+      <h3 class=" text-sm pt-3 font-medium">Front Brake Disk + Brake Pads For Yamaha VINO</h3>
+       <div class="flex items-center py-3">
+                                <img class="" src="images/c6fb50cf367d9354c2e0.png" alt="">
+                                <img class="" src="images/c6fb50cf367d9354c2e0.png" alt="">
+                            </div>
+      <p class="text-red-600 font-bold">$110.00</p>
+      <button class="hover:bg-red-500 bg-gray-300 hover:text-white px-8 py-2 mt-2 rounded text-sm uppercase text-center w-full font-medium">Add to Cart</button>
+    </div>
+    <div>
+        <button class="py-1 px-2 text-sm text-white rounded-sm left-1 bg-red-600 absolute top-1"><p>-15%</p></button>
+    </div>
+   </div>
+    <div class="border border-gray-300 py-6 px-4 w-56 rounded shadow">
+      <img src="images/black-yellow-wheel-cover-13-inch-for-four-wheel.jpg" alt="" class="mx-auto mb-4">
+      <p class="text-sm text-gray-400">Style Hub</p>
+      <h3 class=" text-sm pt-3 font-medium">Front Brake Disk + Brake Pads For Yamaha VINO</h3>
+       <div class="flex items-center py-3">
+                                <img class="" src="images/c6fb50cf367d9354c2e0.png" alt="">
+                                <img class="" src="images/c6fb50cf367d9354c2e0.png" alt="">
+                            </div>
+      <p class="text-red-600 font-bold">$110.00</p>
+      <button class="hover:bg-red-500 bg-gray-300 hover:text-white px-8 py-2 mt-2 rounded text-sm uppercase text-center w-full font-medium">Add to Cart</button>
+    </div>
+    
+   <div class="relative">
+     <div class="border border-gray-300 py-6 px-4 w-56 rounded shadow">
+      <img src="images/menu-cat-7.jpg" alt="" class="mx-auto mb-4 w-96">
+      <p class="text-sm text-gray-400">Style Hub</p>
+      <h3 class=" text-sm pt-3 font-medium">Front Brake Disk + Brake Pads For Yamaha VINO</h3>
+       <div class="flex items-center py-3">
+                                <img class="" src="images/c6fb50cf367d9354c2e0.png" alt="">
+                                <img class="" src="images/c6fb50cf367d9354c2e0.png" alt="">
+                            </div>
+      <p class="text-red-600 font-bold">$110.00</p>
+      <button class="hover:bg-red-500 bg-gray-300 hover:text-white px-8 py-2 mt-2 rounded text-sm uppercase text-center w-full font-medium">Add to Cart</button>
+    </div>
+    <div>
+        <button class="py-1 px-2 text-sm text-white rounded-sm left-1 bg-red-600 absolute top-1"><p>-6%</p></button>
+    </div>
+   </div>
+    <div class="border border-gray-300 py-6 px-4 w-56 rounded shadow">
+      <img src="./images/new-hi-power-maintenance-free-battery-super-power.jpg" alt="" class="mx-auto mb-4">
+      <p class="text-sm text-gray-400">Style Hub</p>
+      <h3 class=" text-sm pt-3 font-medium">Front Brake Disk + Brake Pads For Yamaha VINO</h3>
+       <div class="flex items-center py-3">
+                                <img class="" src="./images/c6fb50cf367d9354c2e0.png" alt="">
+                                <img class="" src="./images/c6fb50cf367d9354c2e0.png" alt="">
+                            </div>
+      <p class="text-red-600 font-bold">$110.00</p>
+      <button class="hover:bg-red-500 bg-gray-300 hover:text-white px-8 py-2 mt-2 rounded text-sm uppercase text-center w-full font-medium">Add to Cart</button>
+    </div>
+    <div class="border border-gray-300 py-6 px-4 w-56 rounded shadow">
+      <img src="./images/pilot-automotive-universal-fit-black-with-red-trim.jpg" alt="" class="mx-auto mb-4">
+      <p class="text-sm text-gray-400">Style Hub</p>
+      <h3 class=" text-sm pt-3 font-medium">Front Brake Disk + Brake Pads For Yamaha VINO</h3>
+       <div class="flex items-center py-3">
+                                <img class="" src="./images/c6fb50cf367d9354c2e0.png" alt="">
+                                <img class="" src="./images/c6fb50cf367d9354c2e0.png" alt="">
+                            </div>
+      <p class="text-red-600 font-bold">$110.00</p>
+      <button class="hover:bg-red-500 bg-gray-300 hover:text-white px-8 py-2 mt-2 rounded text-sm uppercase text-center w-full font-medium">Add to Cart</button>
+    </div>
+    <div class="border border-gray-300 py-6 px-4 w-56 rounded shadow">
+      <img src="./images/front-brake-disk-brake-pads-for-yamaha-vino.jpg" alt="" class="mx-auto mb-4">
+      <p class="text-sm text-gray-400">Style Hub</p>
+      <h3 class=" text-sm pt-3 font-medium">Front Brake Disk + Brake Pads For Yamaha VINO</h3>
+       <div class="flex items-center py-3">
+                                <img class="" src="./images/c6fb50cf367d9354c2e0.png" alt="">
+                                <img class="" src="./images/c6fb50cf367d9354c2e0.png" alt="">
+                            </div>
+      <p class="text-red-600 font-bold">$110.00</p>
+      <button class="hover:bg-red-500 bg-gray-300 hover:text-white px-8 py-2 mt-2 rounded text-sm uppercase text-center w-full font-medium">Add to Cart</button>
+    </div>
+   
+  
+  </div>
+</section>
+<!-- 10 section -->
+ <section class="mx-auto container px-12 pb-12 pt-2 relative">
+             <div>
+                <img class="rounded-md" src="images/cms-banner-3.jpg" alt="">
+             </div>
+             
+                    <div class="absolute top-14 right-12 w-4/12">
+                         <p class=" w-6/12 py-0.5 bg-[#EF233C] rounded-full  text-sm text-white text-center uppercase">
+                           Synlig 50% Tranding
+
+                         </p>  
+
+
+                         <h1 class="text-white text-4xl font-semibold pt-5">Shop Luxurious Sport Car Accessories</h1>
+                        </div>
+ </section>
+
+ <!-- last section -->
+
+ <section class="bg-[#EF233C] ">
+    <div class="mx-auto containerpx-12 py-10 flex justify-around text- text-white">
+        <div class="flex items-center gap-4">
+           <p class="text-4xl"><i class="fa-solid fa-truck-fast "></i></p>
+           <div class="">
+             <h4 class="text-lg font-semibold">Worldwide Shipping </h4>
+            <p class="text-sm"> Order Above $100</p>
+           </div>
+        </div>
+      
+        <div class="flex items-center gap-4">
+           <p class="text-4xl"><i class="fa-solid fa-money-bill-transfer"></i></p>
+           <div class="">
+             <h4 class="text-lg font-semibold">Worldwide Shipping </h4>
+            <p class="text-sm"> Order Above $100</p>
+           </div>
+        </div>
+      
+        <div class="flex items-center gap-4">
+           <p class="text-4xl"><i class="fa-solid fa-truck-fast "></i></p>
+           <div class="">
+             <h4 class="text-lg font-semibold">Worldwide Shipping </h4>
+            <p class="text-sm"> Order Above $100</p>
+           </div>
+        </div>
+      
+        <div class="flex items-center gap-4">
+           <p class="text-4xl"><i class="fa-solid fa-truck-fast "></i></p>
+           <div class="">
+             <h4 class="text-lg font-semibold">Worldwide Shipping </h4>
+            <p class="text-sm"> Order Above $100</p>
+           </div>
+        </div>
+      
+    </div>
+ </section>
+   <footer class="bg-black">
+     <section class="">
+      
+         <div   class="py-10 grid grid-cols-1 md:grid-cols-5 gap-8 text-gray-400 mx-auto container px-12 ">
+               <!-- Contact Us -->
+        <div>
+            <h3 class="text-white text-lg mb-4">Contact Us</h3>
+            <p class="text-sm">Autogear Demo</p>
+            <p class="text-sm">507-Union Trade Centre, USA 12345,</p>
+            <p class="text-sm">Beside the Sun point land.</p>
+            <p class="text-sm">United States</p>
+            <p class="text-sm mt-2" >Call us: +00 123-456-789</p>
+            <p class="text-sm">Email us: admin@exemple.com</p>
+            <div class="flex gap-4 space-x-2 mt-4">
+                <a href="#"><img src="images/google.png" alt="App Store" class=""></a>
+                <a href="#"><img src="images/app.png" alt="Google Play" class=""></a>
+            </div>
+        </div>
+
+        <!-- Products -->
+        <div>
+            <h3 class="text-white text-lg mb-4">Products</h3>
+            <ul class="space-y-2 text-sm">
+                <li><a href="#" class="hover:text-white">Prices Drop</a></li>
+                <li><a href="#" class="hover:text-white">New Products</a></li>
+                <li><a href="#" class="hover:text-white">Best Sellers</a></li>
+                <li><a href="#" class="hover:text-white">Sitemap</a></li>
+                <li><a href="#" class="hover:text-white">Stores</a></li>
+                <li><a href="#" class="hover:text-white">Gearbox</a></li>
+            </ul>
+        </div>
+
+        <!-- Our Company -->
+        <div>
+            <h3 class="text-white text-lg mb-4">Our Company</h3>
+            <ul class="space-y-2 text-sm">
+                <li><a href="#" class="hover:text-white">Delivery</a></li>
+                <li><a href="#" class="hover:text-white">Legal Notice</a></li>
+                <li><a href="#" class="hover:text-white">Terms And Conditions</a></li>
+                <li><a href="#" class="hover:text-white">Secure Payment</a></li>
+                <li><a href="#" class="hover:text-white">Contact Us</a></li>
+                <li><a href="#" class="hover:text-white">About Us</a></li>
+            </ul>
+        </div>
+
+        <!-- Your Account -->
+        <div>
+            <h3 class="text-white text-lg mb-4">Your Account</h3>
+            <ul class="space-y-2 text-sm">
+                <li><a href="#" class="hover:text-white">Order Tracking</a></li>
+                <li><a href="#" class="hover:text-white">Sign In</a></li>
+                <li><a href="#" class="hover:text-white">Create Account</a></li>
+                <li><a href="#" class="hover:text-white">Vouchers</a></li>
+                <li><a href="#" class="hover:text-white">Credit Slip</a></li>
+                <li><a href="#" class="hover:text-white">Wishlist</a></li>
+            </ul>
+        </div>
+
+        <!-- Newsletter -->
+        <div>
+            <h3 class="text-white text-lg mb-4">Get Our Latest Update!</h3>
+            <p class="mb-4 text-sm">Subscribe to our latest newsletter to get news about special discounts.</p>
+          <div class="flex">
+              <input type="email" placeholder="Your email address " class="w-full p-2 mb-2 bg-white text-gray-400 rounded">
+           
+          </div>
+            
+            <div class="mt-2">
+               <p class="text-sm">I agree to the terms and conditions and the privacy policy</p>
+            </div>
+        </div>
+        </div>
+    <div class="pt-4 border-t border-gray-800">
+        <div class="mx-auto container px-12 pb-6 flex justify-between items-center">
+             <div class="flex gap-3 text-gray-100 py-2">
+                       <p class="p-1.5 bg-gray-600 rounded-full hover:bg-red-400"> <i class="fa-brands fa-instagram text-white"></i></p>
+                       <p class="p-1.5 bg-gray-600 rounded-full hover:bg-red-400"> <i class="fa-brands fa-linkedin text-white"></i></p>
+                      <p class="p-1.5 bg-gray-600 rounded-full hover:bg-red-400">  <i class="fa-brands fa-twitter text-white"></i></p>
+                      <p class="p-1.5 bg-gray-600 rounded-full hover:bg-red-400" >  <i class="fa-brands fa-facebook"></i></p>
+                    </div>
+            <div><p class="text-sm text-gray-400">Copyright © Autogear. All Rights Reserved</p></div>
+            <div>
+                <img src="images/payment-all-6.png" alt="">
+            </div>
+        </div>
+    </div>
+       
+        
+     </section>
+    </footer>
+</body>
+</html>
